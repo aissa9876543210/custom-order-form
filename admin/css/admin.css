@@ -1,0 +1,125 @@
+.custom-order-form-settings {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.settings-container {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.settings-tabs {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.settings-tab {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #4a5568;
+}
+
+.settings-tab:hover {
+    color: #2d3748;
+}
+
+.settings-tab.active {
+    border-bottom-color: #2563eb;
+    color: #2563eb;
+}
+
+.settings-panel {
+    display: none;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.settings-panel.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+}
+
+.shipping-price-group {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.shipping-price-group h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+.notice {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.375rem;
+}
+
+.notice.updated {
+    background-color: #f0fff4;
+    border: 1px solid #68d391;
+    color: #2f855a;
+}
+
+.notice.error {
+    background-color: #fff5f5;
+    border: 1px solid #fc8181;
+    color: #c53030;
+}
+
+.wp-picker-container {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.wp-picker-container .wp-color-result {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .settings-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .settings-tab {
+        flex: 1;
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
